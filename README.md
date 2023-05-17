@@ -92,7 +92,7 @@ The numbers and graphs above are preliminary results and are subject to change a
 
 # Citations
 
-- https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/
-- https://en.wikipedia.org/wiki/Kernel_density_estimation
-- https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
-- https://stats.oarc.ucla.edu/r/dae/zinb/
+- <https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/>
+- <https://en.wikipedia.org/wiki/Kernel_density_estimation>
+- <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>
+- <https://stats.oarc.ucla.edu/r/dae/zinb/>
