@@ -2,14 +2,14 @@
 
 Advisee: Ronan Donovan
 
-Advisor: Dr. Daniel Vasiliu.
+Advisor: Dr. Daniel Vasiliu
 
 Date: 16 May 2023
 
 Summart Statement: Using Heart rate variability (HRV) and Facebook AI Similarity Search (FAISS) to detect neonatal sepsis. 
 
 # Abstract
-__Research Purpose__: Neonatal sepsis is a leading cause of death in neonates. The current method of detecting sepsis is through a blood culture, which is invasive and time consuming. Heart rate variability (HRV) is a non-invasive method of detecting sepsis. The goal of this research is to analyze HRV data to improve on existing algorithms like the HeRO score which act as an early warning sign for NICU patients. 
+__Research Purpose__: Neonatal sepsis is a leading cause of mortality in neonates. The current method of detecting sepsis is through a blood culture, which is invasive and time consuming. Heart rate variability (HRV) is a non-invasive method of detecting sepsis. The goal of this research is to analyze HRV data to improve on existing algorithms like the HeRO score which act as an early warning sign for NICU patients. 
 
 # Summary
 __Overview__: This research will use Heart Rate Variability (HRV) sensor data to improve the prediction of sepsis risk in neonates. An SKLearn-compliant estimator will be designed that implements the Facebook AI Similarity Search (FAISS) library to perform ultra-efficient weighted K-Nearest Neighbors (KNN) classification. This will be a versatile python package that can be applied to various domains and will be showcased on GitHub and Python Package Index (PyPI). This development will improve our understanding of how to differentiate between healthy and sick neonates by making the comparison of large quantities of high-dimensional data for classification increasingly trivial. The data from this new estimator will inform HRV-sepsis model development that improves the industry standard Heart Rate Observation (HeRO) score for NICU patients.
@@ -18,14 +18,13 @@ __Overview__: This research will use Heart Rate Variability (HRV) sensor data to
 
 The first goal of the research was to build a python package that implements the Facebook AI Similarity Search (FAISS) library to perform ultra-efficient weighted K-Nearest Neighbors (KNN) classification. This package is called WM-FAISS and is available on [PyPI](https://pypi.org/project/wm-faiss/). It can be installed via the command line:
 
-```pip install wm-faiss```. 
+```pip install wm-faiss``` 
 
 The package is on:
 
 | GitHub | Python Package Index |
 | --- | --- |
 [<img src="assets/buttons/githubbutton.png" width="100"/>](https://github.com/RonanChance/wm-faiss) | [<img src="assets/buttons/ppi.svg" width="80"/>](https://pypi.org/project/wm-faiss/)
-
 
 Currently the package allows the user to create a classifier with the following functions:
 
@@ -40,7 +39,7 @@ Leveraging the power of FAISS, a quantizer is created to discretize the feature 
 
 # Kernel Density Estimations with FastKDE
 
-Bivariate Kernel Density Estimation (KDE) is a statistical technique used to estimate the probability density function of a pair of variables. It allows us to visualize the joint distribution of two variables and understand the relationship between them. By smoothing the observed data points in a two-dimensional space, bivariate KDE provides a continuous estimate of the density. This estimation is achieved by placing kernel functions at each data point and summing up their contributions. The resulting KDE plot displays regions of high and low density, allowing us to identify patterns, clusters, and areas of interest in the data. Bivariate KDEs are useful for exploratory data analysis, as they provide a comprehensive and intuitive visualization of the joint distribution, facilitating the identification of relationships, correlations, and outliers. They are particularly valuable when working with multidimensional data, as they offer a way to understand the interactions between two variables simultaneously.
+Bivariate Kernel Density Estimation (KDE) is a statistical technique used to estimate the probability density function of a pair of variables. It allows us to visualize the joint distribution of two variables and understand the relationship between them. By smoothing the observed data points in a two-dimensional space, bivariate KDE provides a continuous estimate of the density. This estimation is achieved by placing kernel functions at each data point and summing up their contributions. The resulting KDE plot displays regions of high and low density, allowing us to identify patterns, clusters, and areas of interest in the data. Bivariate KDEs are useful for exploratory data analysis, as they provide a comprehensive and intuitive visualization of the joint distribution, facilitating the identification of relationships and correlations. They are particularly valuable when working with multidimensional data, as they offer a way to understand the interactions between two variables simultaneously.
 
 The reason this is useful is because we need to find two variables that best differentiate between healthy and sick neonates (each variable is a computation relating to heart rate variability). The following two plots showcase some early results of this process. The first plot shows the KDE of variables 2 and 3 whereas the second plot shows the KDE of the 2 and 19.
 
